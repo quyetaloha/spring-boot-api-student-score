@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import cmc.inter.main.session.SessionManager;
+import cmc.intern.main.session.SessionManager;
 
 @Component
 @Order(1)
