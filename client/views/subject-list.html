@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/jquery.blockUI.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<style>
+    .alert-danger{
+        width: 350px;
+        top: 5px;
+        position: absolute;
+        right: 5px;
+        display: none;
+    }
+    .text-center{
+        height: 100px;
+        background-image: linear-gradient(45deg, #f9f2f2, #b6d3f3);
+    }
+
+    </style>
+<body>
+
+<div class="text-center">
+  <h1>Danh Sách Môn Học</h1>
+  <div class="navbar-header">
+    <a class="navbar-brand" href="user-list.html">Sinh viên</a>
+    <a class="navbar-brand" href="insert.html">Quản lý Điểm</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+        <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Môn</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+          </table>
+    </div>
+</div>
+<div class="myAlert-bottom alert alert-danger">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Không thể lấy dữ liệu</strong>
+  </div>
+<script src="js/subject-list.js"></script>
+</body>
+</html>
